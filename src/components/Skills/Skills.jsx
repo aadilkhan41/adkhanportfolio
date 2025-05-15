@@ -8,7 +8,7 @@ import JavascriptIcon from '../../assets/techstack/JavascriptIcon';
 import CssIcon from '../../assets/techstack/CssIcon';
 import HtmlIcon from '../../assets/techstack/HtmlIcon';
 import MysqlIcon from '../../assets/techstack/MysqlIcon';
-import VscodeIcon from '../../assets/techstack/VsCodeIcon';
+import VscodeIcon from '../../assets/techstack/VscodeIcon';
 import JavaIcon from '../../assets/techstack/JavaIcon';
 import TypescriptIcon from '../../assets/techstack/TypescriptIcon';
 import FirebaseIcon from '../../assets/techstack/FirebaseIcon';
