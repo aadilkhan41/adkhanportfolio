@@ -1,0 +1,126 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main div {
+    width: 1100px;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details h1 {
+    font-size: 75px;
+    margin: 0;
+    background: linear-gradient(93deg, #39b6d8 3.94%, #f7d344 49.4%, #e38330 94.86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    color: #FAFAFA;
+}
+
+.details span {
+    margin: 50px 0 30px 0;
+}
+
+.details span a {
+    padding: 13px 18px;
+    font-size: 16px;
+    color: #FAFAFA;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid #212529;
+}
+
+.details span a:hover {
+    color: black;
+    background-color: white;
+}
+
+.details ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.details ul li {
+    display: inline-block;
+    opacity: 0;
+}
+
+.details ul a {
+    display: block;
+    padding: 15px;
+    margin-right: 10px;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.details .github {
+    background-image: url("../../assets/github.svg");
+}
+
+.details .leetcode {
+    background-image: url("../../assets/leetcode.svg");
+}
+
+.details .linkedin {
+    background-image: url("../../assets/linkedin.svg");
+}
+
+.details .twitter {
+    background-image: url("../../assets/twitter.svg");
+}
+
+@keyframes zoomWiggle {
+    0% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05) rotate(3deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.sticker img {
+    width: 400px;
+    animation: zoomWiggle 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+    .details {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .sticker {
+        display: none;
+    }
+}

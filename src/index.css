@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background-color: black;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #212529;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6c757d;
+}

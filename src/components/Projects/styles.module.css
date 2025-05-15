@@ -1,0 +1,16 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.projects{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 100px;
+}

@@ -1,0 +1,22 @@
+.viewProject{
+    display: flex;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewProject svg{
+    width: 15px;
+    height: 15px;
+}
+
+.viewProject a{
+    font-size: 12px;
+    padding: 0 5px;
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.viewProject a:hover{
+    color: white;
+}

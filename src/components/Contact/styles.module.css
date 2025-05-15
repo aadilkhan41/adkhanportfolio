@@ -1,0 +1,50 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.contactus{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactus p{
+    color: #adb5bd;
+    text-align: center;
+}
+
+.contactus b{
+    color: white;
+    font-weight: 500;
+}
+
+.contactus section{
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contactus span{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #212529;
+}
+
+.contactus svg{
+    width: 25px;
+}
+
+.contactus a{
+    color: white;
+}

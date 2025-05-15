@@ -1,0 +1,18 @@
+.button a{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 18px;
+    font-size: 16px;
+    color: #FAFAFA;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid #212529;
+    transition: 0.4s ease-in;
+}
+
+.button a:hover{
+    color: black;
+    background-color: white;
+}

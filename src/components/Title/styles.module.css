@@ -1,0 +1,42 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title div{
+    display: flex;
+    justify-content: center;
+}
+
+.title svg{
+    width: 20px;
+    height: 20px;
+    padding: 13px;
+    font-size: 16px;
+    color: #FAFAFA;
+    border-radius: 10px;
+    border: 1px solid #212529;
+}
+
+.title h1{
+    margin: 15px 0 10px 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title b{
+    font-weight: 700;
+    background: linear-gradient(93deg, #39b6d8 3.94%, #f7d344 49.4%, #e38330 94.86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title p{
+    color: #adb5bd;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+}
