@@ -68,9 +68,9 @@ function Skills() {
         <article id='Skills' className={styles.article}>
             <Title data={data} Icon={Skill} />
             <motion.div className={styles.skills} variants={container} initial="hidden" animate="show">
-                {[...Array(4)].map((_, i) => (
+                {[...Array(5)].map((_, i) => (
                     <section key={i}>
-                        {iconArr.slice(i * 5, i * 5 + 5)
+                        {iconArr.slice(i * 4, i * 4 + 4)
                             .map(([Icon, title], index) => (
                                 <motion.span key={index} title={title} variants={item}>
                                     {Icon}
