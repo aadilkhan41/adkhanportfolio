@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
-import profileSticker from '../../assets/profile-sticker.png';
 import { motion } from "framer-motion";
+import BubbleBanner from '../BubbleBanner/BubbleBanner';
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -15,7 +15,7 @@ const fadeUp = {
     }),
 };
 
-function HomeBanner() {
+function Intro() {
     return (
         <main id='Home' className={styles.main}>
             <div>
@@ -30,12 +30,10 @@ function HomeBanner() {
                         <motion.li variants={fadeUp} custom={3}><a href="" className={styles.twitter}></a></motion.li>
                     </motion.ul>
                 </motion.section>
-                <section className={styles.sticker}>
-                    <img src={profileSticker} alt="Aadil's Profile" />
-                </section>
+                <section className={styles.bubbleBanner}><BubbleBanner/></section>
             </div>
         </main>
     );
 }
 
-export default HomeBanner;
+export default Intro;
