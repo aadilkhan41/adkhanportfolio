@@ -1,4 +1,4 @@
-function ReactIcon() {
+export function ReactIcon() {
     return (
         <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="reactjs">
@@ -12,5 +12,3 @@ function ReactIcon() {
         </svg>
     );
 }
-
-export default ReactIcon;

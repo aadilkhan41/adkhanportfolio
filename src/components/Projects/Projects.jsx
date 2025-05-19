@@ -13,9 +13,6 @@ import FirebaseIcon from '../../assets/FirebaseIcon';
 import MySqlIcon from '../../assets/MySqlIcon';
 import PhpIcon from '../../assets/PhpIcon';
 
-
-
-
 import cloudstorage from '../../assets/cloud-storage.jpg';
 import parkingmangement from '../../assets/parking-mangement.jpg';
 import bislericlone from '../../assets/bisleri-clone.png';
