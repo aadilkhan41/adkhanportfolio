@@ -27,15 +27,15 @@ function Projects() {
     };
 
     const projects = [
-        {
-            key: 1,
-            title: "Parking Parker",
-            disc: "Built and deployed a production-ready parking solution with digital ticketing and live vehicle monitoring. JWT-backed receipts enabled verifiable sessions, ensuring secure and scalable parking operations. ",
-            cover: parkingmangement,
-            tools: [JavaScript, Css, Html, ReactIcon, ReduxIcon, FirebaseIcon],
-            link: "https://parking-parker.onrender.com/",
-            repo: "https://github.com/aadilkhan41/parking-parker",
-        },
+        // {
+        //     key: 1,
+        //     title: "Parking Parker",
+        //     disc: "Built and deployed a production-ready parking solution with digital ticketing and live vehicle monitoring. JWT-backed receipts enabled verifiable sessions, ensuring secure and scalable parking operations. ",
+        //     cover: parkingmangement,
+        //     tools: [JavaScript, Css, Html, ReactIcon, ReduxIcon, FirebaseIcon],
+        //     link: "https://parking-parker.onrender.com/",
+        //     repo: "https://github.com/aadilkhan41/parking-parker",
+        // },
         {
             key: 2,
             title: "Cloud Storage",
