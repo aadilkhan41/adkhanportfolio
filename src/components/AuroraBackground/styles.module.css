@@ -1,0 +1,70 @@
+.background{
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: radial-gradient(ellipse at top, #0d1117 0%, #050505 60%, #000 100%);
+}
+
+.grid{
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.blob{
+    position: absolute;
+    width: 45vmax;
+    height: 45vmax;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.18;
+    will-change: transform;
+}
+
+.teal{
+    top: -15vmax;
+    left: -10vmax;
+    background: #2ec4b6;
+    animation: driftA 28s ease-in-out infinite alternate;
+}
+
+.yellow{
+    top: 30%;
+    right: -15vmax;
+    background: #f9c74f;
+    opacity: 0.12;
+    animation: driftB 34s ease-in-out infinite alternate;
+}
+
+.orange{
+    bottom: -20vmax;
+    left: 25%;
+    background: #f3722c;
+    opacity: 0.14;
+    animation: driftC 40s ease-in-out infinite alternate;
+}
+
+@keyframes driftA{
+    to{ transform: translate(20vw, 25vh) scale(1.2); }
+}
+
+@keyframes driftB{
+    to{ transform: translate(-25vw, -15vh) scale(0.9); }
+}
+
+@keyframes driftC{
+    to{ transform: translate(15vw, -25vh) scale(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce){
+    .blob{
+        animation: none;
+    }
+}

@@ -1,9 +1,23 @@
 .tools{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
 }
 
 .tools label{
     font-size: 12px;
+}
+
+.tools svg{
+    width: 1em;
+    height: 1em;
+}
+
+.chip{
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid #343a40;
+    color: #dee2e6;
 }

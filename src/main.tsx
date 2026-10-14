@@ -1,11 +1,11 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Home from './pages/Home.jsx'
-import VantaBodyBackground from './components/VantaBodyBackground/VantaBodyBackground.jsx';
+import Home from './pages/Home'
+import AuroraBackground from './components/AuroraBackground/AuroraBackground';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
     <>
-        <VantaBodyBackground />
+        <AuroraBackground />
         <div style={{ position: "relative", zIndex: 1 }}>
             <Home />
         </div>

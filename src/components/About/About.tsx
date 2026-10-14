@@ -1,13 +1,13 @@
 import styles from './styles.module.css';
 import Title from '../Title/Title';
 import User from '../../assets/User';
-import geekster from '../../assets/geekster.svg';
 import profile from '../../assets/profile.png';
+import type { TitleData } from '../../types';
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useState } from 'react';
 
-const fadeUp = {
+const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i = 1) => ({
         opacity: 1,
@@ -20,7 +20,7 @@ const fadeUp = {
     }),
 };
 
-const profileVariant = {
+const profileVariant: Variants = {
     hidden: {
         opacity: 0,
         y: 50,
@@ -37,13 +37,14 @@ const profileVariant = {
     },
 };
 
+const data: TitleData = {
+    title: 'About',
+    b: 'Me',
+    p: 'A story of growth and discovery',
+};
+
 function About() {
     const [animate, setAnimate] = useState(false);
-    const data = {
-        title: 'About',
-        b: 'Me',
-        p: 'A story of growth and discovery',
-    };
 
     return (
         <article id='About' className={styles.article}>
@@ -52,17 +53,17 @@ function About() {
                 <motion.section initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={profileVariant} className={styles.profile}>
                     <div className={animate? styles.firstDiv : ''}></div>
                     <div className={animate? styles.secondDiv : ''}>
-                        <img src={profile} alt="Aadil Khan" onLoad={()=>setAnimate(!animate)}/>
+                        <img src={profile} alt="Aadil Khan" onLoad={()=>setAnimate(true)}/>
                         <p>Aadil khan</p>
                     </div>
                 </motion.section>
                 <motion.section className={styles.details} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                     <motion.h2 variants={fadeUp} custom={1}>Aadil Khan</motion.h2>
-                    <motion.p variants={fadeUp} custom={2}>Full-stack Intern at <a href="https://www.geekster.in/"><span>Geekster <img src={geekster} alt="Geekster" /></span></a></motion.p>
-                    <motion.p variants={fadeUp} custom={3}>Hey, I’m <b>Aadil</b> — a fresher Software Engineer passionate about full-stack development and building real-world applications using the MERN stack.</motion.p>
-                    <motion.p variants={fadeUp} custom={4}>Coming from a telecom background, I made the switch to tech out of a genuine love for problem-solving and creating useful digital experiences. I’m particularly drawn to the React ecosystem and enjoy turning ideas into clean, responsive interfaces.</motion.p>
-                    <motion.p variants={fadeUp} custom={5}>As part of my learning journey, I’ve been diving into hands-on projects and continuously improving my skills in both front-end and back-end development. I’m also a big fan of writing clean, maintainable code and understanding how things work under the hood.</motion.p>
-                    <motion.p variants={fadeUp} custom={6}>Even though I’m at the beginning of my professional career, I bring curiosity, consistency, and a strong desire to grow as a developer. I’m always looking to learn, collaborate, and contribute to meaningful projects.</motion.p>
+                    <motion.p variants={fadeUp} custom={2}>Full Stack Developer · Noida, Uttar Pradesh, India</motion.p>
+                    <motion.p variants={fadeUp} custom={3}>Hey, I’m <b>Aadil</b>, a Full Stack Developer with 1+ year of experience building scalable web applications and AI-powered products. I work across the stack with JavaScript, TypeScript, React.js, Node.js, Express.js, Python and FastAPI.</motion.p>
+                    <motion.p variants={fadeUp} custom={4}>At <b>Eoxys IT Solution</b> I engineered a microservices SaaS platform with an event-driven architecture, built a RAG pipeline for material catalog retrieval, and brought API response times down to 0.5–1.5 seconds with Redis caching. I enjoy working hands-on with LangChain, LangGraph and LLM integrations to ship practical AI features.</motion.p>
+                    <motion.p variants={fadeUp} custom={5}>I transitioned into software from three years as a Quality Control Engineer in telecom, where I managed QA and automation for large-scale fiber network design projects. That background taught me to care about reliability, process and the details.</motion.p>
+                    <motion.p variants={fadeUp} custom={6}>I hold a B.Tech in Electrical Engineering from Poornima College of Engineering, Jaipur, and a certification in Problem Solving through C Programming from IIT Kharagpur (NPTEL).</motion.p>
                 </motion.section>
             </div>
         </article>

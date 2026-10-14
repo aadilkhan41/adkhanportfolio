@@ -3,12 +3,12 @@ import { useEffect } from "react";
 const VantaBodyEffect = () => {
     useEffect(() => {
         const loadScriptsAndInit = async () => {
-            const loadScript = (src) =>
-                new Promise((resolve, reject) => {
+            const loadScript = (src: string) =>
+                new Promise<void>((resolve, reject) => {
                     const script = document.createElement("script");
                     script.src = src;
                     script.async = true;
-                    script.onload = resolve;
+                    script.onload = () => resolve();
                     script.onerror = reject;
                     document.body.appendChild(script);
                 });

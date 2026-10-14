@@ -4,7 +4,7 @@
 }
 
 .main div {
-    width: 1100px;
+    width: 1260px;
     height: 100vh;
     max-width: 100%;
     display: flex;
@@ -14,7 +14,7 @@
 
 .details {
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
@@ -36,22 +36,81 @@
     color: #FAFAFA;
 }
 
-.details span {
-    margin: 50px 0 30px 0;
+.details .badge {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 16px;
+    padding: 5px 12px;
+    font-size: 13px;
+    color: #dee2e6;
+    border-radius: 20px;
+    border: 1px solid #343a40;
+    background: rgba(255, 255, 255, 0.05);
 }
 
-.details span a {
+.details .role {
+    margin: 6px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #dee2e6;
+}
+
+.details .extra {
+    color: #adb5bd;
+    font-size: 15px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    column-gap: 16px;
+    margin: 28px 0 0;
+    padding: 16px 0;
+    border-top: 1px solid #212529;
+    border-bottom: 1px solid #212529;
+}
+
+.stats dt {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FAFAFA;
+}
+
+.stats dd {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #adb5bd;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0 20px;
+}
+
+.actions a {
     padding: 13px 18px;
     font-size: 16px;
     color: #FAFAFA;
     border-radius: 10px;
     text-decoration: none;
     border: 1px solid #212529;
+    transition: background-color 0.2s, color 0.2s;
 }
 
-.details span a:hover {
+.actions a:hover,
+.actions .primary {
     color: black;
     background-color: white;
+}
+
+.actions .primary:hover {
+    background-color: #dee2e6;
 }
 
 .details ul {
@@ -90,6 +149,13 @@
     background-image: url("../../assets/twitter.svg");
 }
 
+.showcase {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 85px 0 40px;
+}
+
 @media (max-width: 768px) {
     .details {
         width: 100%;
@@ -99,7 +165,17 @@
         box-sizing: border-box;
     }
 
-    .bubbleBanner {
+    .showcase {
         display: none;
+    }
+
+    .details h1 {
+        font-size: 60px;
+    }
+
+    .main div {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 40px;
     }
 }  

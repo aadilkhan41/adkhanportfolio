@@ -1,7 +1,8 @@
 import styles from './styles.module.css';
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
+import type { IconComponent, TitleData } from '../../types';
 
-const fadeUp = {
+const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i = 1) => ({
         opacity: 1,
@@ -14,7 +15,12 @@ const fadeUp = {
     }),
 };
 
-function Title({data, Icon}){
+interface TitleProps {
+    data: TitleData;
+    Icon: IconComponent;
+}
+
+function Title({data, Icon}: TitleProps){
     return (
         <motion.div className={styles.title} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} variants={fadeUp}>
             <div><Icon/></div>
