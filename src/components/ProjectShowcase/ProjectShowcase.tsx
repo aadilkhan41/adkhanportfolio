@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 import { motion } from "framer-motion";
-import desktop from '../../assets/parkcaro-desktop.png';
+import desktop from '../../assets/parking-mangement.jpg';
 import mobile from '../../assets/parkcaro-mobile.jpg';
 
 function ProjectShowcase() {
@@ -24,9 +24,9 @@ function ProjectShowcase() {
                         <svg viewBox='0 0 24 24'><path d='M9 18l6-6-6-6' /></svg>
                         <svg viewBox='0 0 24 24'><path d='M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7' /></svg>
                     </span>
-                    <a className={styles.url} href='https://parkcaro.onrender.com/' target='_blank' rel='noreferrer'>
+                    <a className={styles.url} href='https://parkcaro-l5ps.onrender.com/' target='_blank' rel='noreferrer'>
                         <svg viewBox='0 0 24 24'><rect x='5' y='11' width='14' height='10' rx='2' /><path d='M8 11V7a4 4 0 0 1 8 0v4' /></svg>
-                        <span><em>https://</em>parkcaro.onrender.com<em>/dashboard</em></span>
+                        <span><em>https://</em>parkcaro-l5ps.onrender.com<em>/dashboard</em></span>
                         <b>Live</b>
                     </a>
                     <svg className={styles.star} viewBox='0 0 24 24'><path d='M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z' /></svg>

@@ -48,7 +48,7 @@ const projects: ProjectType[] = [
         ],
         cover: parkingmangement,
         tools: [ReactIcon, ReduxIcon, JavaScript, "Node.js", "Express", "MongoDB", "Socket.IO"],
-        link: "https://parkcaro.onrender.com/",
+        link: "https://parkcaro-l5ps.onrender.com/",
         repo: "https://github.com/aadilkhan41/parking-parker",
     }, {
         key: 3,

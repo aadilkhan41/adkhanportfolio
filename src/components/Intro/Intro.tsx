@@ -26,8 +26,9 @@ function Intro() {
                     <motion.p variants={fadeUp} custom={2}>I build scalable web applications and AI-powered products with TypeScript, React.js, Node.js, Python and FastAPI, from RAG pipelines and LangGraph workflows to fast, clean user interfaces.</motion.p>
                     <motion.p className={styles.extra} variants={fadeUp} custom={2.5}>Most recently at Eoxys IT Solution, I shipped Smart Measure, an AI measurement and ordering platform live on web and mobile.</motion.p>
                     <motion.dl className={styles.stats} variants={fadeUp} custom={3}>
-                        <dt>1+ yr</dt><dd>Full stack development</dd>
-                        <dt>3 yrs</dt><dd>QA & automation engineering</dd>                    </motion.dl>
+                        <dt>2 yrs</dt><dd>Full stack development</dd>
+                        {/* <dt>3 yrs</dt><dd>QA & automation engineering</dd> */}
+                    </motion.dl>
                     <motion.nav className={styles.actions} variants={fadeUp} custom={3.5}>
                         <a href="#Projects" className={styles.primary}>View projects</a>
                         <a href="#About">More about me</a>

@@ -16,8 +16,8 @@ import { JestIcon } from '../assets/techstack/JestIcon';
 import { ExpressIcon } from '../assets/techstack/ExpressIcon';
 import type { Experience, Skill, SkillGroup } from '../types';
 import eoxysLogo from '../assets/eoxys-logo.png';
-import geeksterLogo from '../assets/geekster-logo.jpg';
-import congruexLogo from '../assets/congruex-logo.jpg';
+// import geeksterLogo from '../assets/geekster-logo.jpg';
+// import congruexLogo from '../assets/congruex-logo.jpg';
 
 export const iconArr: Skill[] = [
     {
@@ -102,7 +102,7 @@ export const experiences: Experience[] = [
         logo: eoxysLogo,
         role: "Full Stack Developer",
         location: "Jaipur",
-        period: "Sept 2025 – Sept 2026",
+        period: "Sept 2024 – Sept 2026",
         points: [
             "Engineered a microservices SaaS platform with an event-driven architecture.",
             "Built a RAG pipeline to retrieve relevant material catalog rows, improving accuracy and reducing token usage.",
@@ -111,25 +111,27 @@ export const experiences: Experience[] = [
             "Implemented JWT authentication and role-based authorization.",
             "Contributed to backend system design, schema design, API scalability and performance engineering.",
         ],
-    },{
-        company: "Geekster",
-        logo: geeksterLogo,
-        role: "MERN Stack Intern",
-        location: "Remote",
-        period: "Jan 2025 – June 2025",
-        points: [
-            "Developed a responsive internal dashboard using React.js, TypeScript and Material UI.",
-            "Developed 8+ RESTful APIs using Node.js, Express.js and MongoDB for an internal business dashboard.",
-            "Worked on API design, database operations, error handling and backend debugging.",
-        ],
-    },{
-        company: "Congruex Asia Pacific",
-        logo: congruexLogo,
-        role: "Quality Control Engineer",
-        location: "Remote",
-        period: "March 2021 – June 2024",
-        points: [
-            "Managed quality assurance and automation processes for large-scale fiber network design projects.",
-        ],
     },
+    // {
+    //     company: "Geekster",
+    //     logo: geeksterLogo,
+    //     role: "MERN Stack Intern",
+    //     location: "Remote",
+    //     period: "Jan 2025 – June 2025",
+    //     points: [
+    //         "Developed a responsive internal dashboard using React.js, TypeScript and Material UI.",
+    //         "Developed 8+ RESTful APIs using Node.js, Express.js and MongoDB for an internal business dashboard.",
+    //         "Worked on API design, database operations, error handling and backend debugging.",
+    //     ],
+    // },
+    // {
+    //     company: "Congruex Asia Pacific",
+    //     logo: congruexLogo,
+    //     role: "Quality Control Engineer",
+    //     location: "Remote",
+    //     period: "March 2021 – June 2024",
+    //     points: [
+    //         "Managed quality assurance and automation processes for large-scale fiber network design projects.",
+    //     ],
+    // },
 ];
